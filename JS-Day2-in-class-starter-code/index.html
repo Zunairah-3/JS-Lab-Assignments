@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Day 2 - Intermediate</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">JS Day 2 - Intermediate</h1>
+      <h3>Agenda</h3>
+      <p>
+        <ol>
+            <li>Variables (let, const, var)</li>
+            <li>Template Literals</li>
+            <li>Ternary Operator)</li>
+            <li>Arrow Functions</li>
+            <li>Array Methods like .map() and .filter()</li>
+            <li>Destructuring)</li>
+            <li>Spread Operator</li>
+            <li>Try/Catch error block</li>
+        </ol>
+      </p>  
+    </header>
+    <section id="1">
+        <h3>Part 1 - <span class="head-text-dark">var vs let/const</span></h3>
+        <p><b>Instructions: </b>Open the browser inspector and review the JS code for part 1.  
+          Reviewing the output, explain how var scopes differently than let and why we'd use <b>let</b> over <b>var</b>.</p>
+          <h4 id="result1">
+    var is function-scoped, so it ignores block boundaries. let/const are block-scoped, so variables inside { } don’t leak out. 
+    That’s why testVar() prints 50 and 50, but testLet() prints 50 then 30. We use let/const instead of var to avoid accidental overwrites and make code more predictable.
+  </h4>
+    </section>
+ 
+    <section id="2">
+        <h3>Part 2 - <span class="head-text-dark">Template literals</span></h3>
+        <p><b>Instructions: </b>Update the string in your JS code to use template literals instead of basic concatenation.<br>
+        Also after this see if you can use a template literal to pull in your name via the myName variable and the proper yera using the today variable in your JS file.</p>
+        <h4 id="result2">Replace this innerText with updated text</h4>
+    </section>
+
+    <section id="3">
+        <h3>Part 3 - <span class="head-text-dark">Ternary Operator</span></h3>
+        <p><b>Instructions: </b>Update JS loop to use a ternary operator instead to get the same results of the original code in section 1.  You'll need to uncomment this to see what is expected .</p>
+        <h4 id="result3">Replace this innerText with updated text</h4>
+    </section>
+
+    <section id="4">
+        <h3>Part 4 - <span class="head-text-dark">Arrow Functions</span></h3>
+        <p><b>Instructions: </b>Update JS function in PART 4 of JS code to be an arrow function instead.  And then see if you can add a default value to the first function.  Output results in the console log</p>
+    </section>
+
+    <section id="5">
+        <h3>Part 5 - <span class="head-text-dark">Array Methods</span></h3>
+        <p><b>Instructions: </b>Update JS Part 5 code to use Array map() method to loop through results.  Also tag on a filter() method to only pull fruits that start with "b".  You can use LLM for this but make sure you provide context of 1) your current code, 2) your goal, and 3) clear expectations in terms of output detail.</p>
+        <h4 id="result5"></h4>
+        <button onclick="printFruit()">Print Fruit array</button>
+        <button onclick="clearText()">Clear text</button>
+    </section>
+
+    <section id="6">
+        <h3>Part 6 - <span class="head-text-dark">Destructuring</span></h3>
+        <p><b>Instructions: </b>Rewrite the function so that it uses destructing </p>
+        <h4 id="result6"></h4>
+    </section>
+    
+    <section id="7">
+        <h3>Part 7 - <span class="head-text-dark">Spread Operator</span></h3>
+        <p><b>Instructions: </b>Update JS currentProduct const to utislize the spread operator to copy in the base and holiday objects as a parameter called LastUpdated with today's date value.
+        <br><br>
+        The use template literals to write out the following message <br>[The Wireless Headphones are on sale for 149.99 as of 2023-12-31]
+
+      </p>
+        <h4 id="result7"></h4>
+    </section>
+    
+    <section id="8">
+        <h3>Part 8 - <span class="head-text-dark">Try/Throw/Catch/Finally keywords for error handling</span></h3>
+        <p><b>Instructions: </b>We've done some logical coding using if/else and ternary but what if there is an error. 
+            How can we handle this?  This is what the <u>try/catch statement</u> is for.  You TRY various tests and THROW an error if that error test is true.  Then you can collect the errors in the CATCH block and use the FINALLY block to run code after the CATCH runs.  Update the InputValidation() function to use the try/catch/finally keywords to handle the following scenarios:
+            <ol>
+                <li>It should say 'Input is EMPTY" if nothing is in the textbox</li>
+                <li>It should say 'Input is NOT A NUMBER' if not numeric</li>
+                <li>It should say 'Input is TOO HIGH' if the number is higher than 15 or 'Input is TOO LOW' if below 10</li>
+                <li>It should say 'Sucesss' if entry is a number between 10 and 15</li>
+            </ol>
+            <p>For a little help check out examples here: <a href="https://www.w3schools.com/js/js_errors.asp" target="_blank">https://www.w3schools.com/js/js_errors.asp</a></p>
+        </p>
+        <hr>
+        <p>Please input a number between 10 and 15:</p>
+        <input id="part8-input" type="text">
+        <button type="button" onclick="InputValidation()">Test Input</button>
+        <p id="part8-p"></p>
+    </section>
+        
+    <hr>
+
+    <footer>
+      <p id="footer">&copy; Clint Tuttle 2024</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+
+ 
+</html>

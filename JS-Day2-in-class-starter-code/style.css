@@ -1,0 +1,68 @@
+/* Found this palette on https://coolors.co/003049-d62828-f77f00-fcbf49-ff3f00 */
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:14px;
+    font-weight: bold;
+    color:#333;
+    background: #003049;
+  }
+  
+  header{
+    background: #fcbf49;
+    border-bottom:#333 3px solid;
+    margin:20px 20px 20px 20px;
+    padding:0px 15px 0px 15px;
+  }
+  
+  h1#heading{
+    color: #d62828;
+    font-size: 2.5em;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+section {
+  margin: 0px 10px 15px 10px;
+  padding: 10px;
+  background:#eae2b7;
+}
+
+section h3 {
+  color: #d62828;
+  font-weight: bold;
+  font-size: large ;
+}
+
+section h4 {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #333;
+  padding: 5px;
+  background-color: azure;
+}
+
+#part8-p {
+  color:red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+p {
+  text-size-adjust: 90%;
+}
+
+.head-text-dark {
+  color: #f77f00;
+  font-weight: bold;
+  font-size: large ;
+}
+
+footer{
+  padding: 20px 5px;
+  color:azure;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+}
